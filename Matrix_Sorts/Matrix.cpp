@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "Matrix.h"
 #include <type_traits>
-
+#include <algorithm>
 void Matrix::memory_allocation(int** matrix){
 
 	this->matrix = new int* [cols];
@@ -14,16 +14,26 @@ void Matrix::memory_allocation(int** matrix){
 	}
 }
 
-void Matrix::memory_allocation(int* matrix){
+void Matrix::memory_allocation(int* array){
 
 	this->matrix = new int* [cols];
 
 	for (int i = 0; i < rows; i++) {
 		this->matrix[i] = new int[rows];
 		for (int a = 0; a < cols; a++) {
-			this->matrix[i][a] = matrix[a];
+			this->matrix[i][a] = array[a];
 		}
 	}
+}
+
+bool Matrix::is_sorted(int rows){
+	for (int j = 0; j < this->cols - 1; j++) {
+		if (this->matrix[rows][j] > this->matrix[rows][j+1]) {
+			return false;
+		}
+	}
+	
+	return true;
 }
 
 Matrix::Matrix(const Matrix& obj){
@@ -35,7 +45,7 @@ Matrix::Matrix(const Matrix& obj){
 	}
 }
 
-Matrix::Matrix(Matrix&& obj){
+Matrix::Matrix(Matrix&& obj) noexcept{
 	this->rows = obj.rows;
 	this->cols = obj.rows;
 	this->matrix = obj.matrix;
@@ -84,12 +94,7 @@ Matrix::~Matrix()
 }
 
 void Matrix::fulfill_random_fill(int min_value, int max_value) {
-	/*(max_value < min_value) ? max_value = min_value : max_value = max_value;
-	for (int i = 0; i < this->rows; i++) {
-		for (int a = 0; a < this->cols; a++) {
-			this->matrix[i][a] = min_value + rand() % (max_value - min_value + 1);
-		}
-	}*/
+
 	if (max_value < min_value) {
 		int buf = max_value;
 		max_value = min_value;
@@ -100,6 +105,56 @@ void Matrix::fulfill_random_fill(int min_value, int max_value) {
 			this->matrix[i][a] = min_value + rand() % (max_value - min_value + 1);
 		}
 	}
+}
+
+int partition(int* array, int min, int max) {
+	int pivot = array[min];
+	int i = min - 1, j = max + 1;
+	
+	while (true) {
+		do {
+			i++;
+		} while (array[i] < pivot);
+
+		do {
+			j--;
+		} while (array[j] > pivot);
+
+		if (i >= j) {
+			return j;
+		}
+		std::swap(array[i], array[j]);
+
+	}
+}
+
+int* Matrix::quick_Sort(int* array, int min_index, int max_index){
+	for (int i = 0; i < rows; i++) {
+		if (min_index < max_index) {
+			int pi = partition(array, min_index, max_index);
+
+
+			quick_Sort(array, pi, min_index);
+			quick_Sort(array, max_index,pi + 1);
+		}
+	}
+	return array;
+}
+
+int** Matrix::quick_Sort(int** matrix, int rows, int max_index, int min_index) {
+	for (int i = 0; i < rows; i++) {
+		quick_Sort(matrix[i], min_index, max_index - 1); 
+	}
+	return matrix;
+}
+
+
+void Matrix::quick_Sort(){
+
+	for (int i = 0; i < this->rows; i++) {
+		this->matrix[i] = quick_Sort(matrix[i], 0, this->cols - 1);
+	}
+
 }
 
 Matrix Matrix::operator+(const Matrix& obj) {
@@ -192,7 +247,12 @@ Matrix Matrix::operator/(const Matrix& obj) {
 
 	for (int i = 0; i < obj.rows; i++) {
 		for (int j = 0; j < obj.cols; j++) {
-			buffer[i][j] = (buffer[i][j]) * (obj.matrix[i][j]);
+			if (buffer[i][j] != 0 && obj.matrix[i][j] != 0) {
+				buffer[i][j] = (buffer[i][j]) / (obj.matrix[i][j]);
+			}
+			else {
+				buffer[i][j] = 0;
+			}
 		}
 	}
 
@@ -212,19 +272,3 @@ std::ostream& operator<<(std::ostream& out, Matrix& obj){
 
 	return out;
 }
-//
-//std::ostream& operator<<(std::ostream& out, Matrix obj){
-//	for (int i = 0; i < obj.rows; i++) {
-//
-//		for (int a = 0; a < obj.cols; a++) {
-//
-//			out << obj.matrix[i][a] << ' ';
-//		}
-//
-//		out << '\n';
-//	}
-//
-//	return out;
-//	
-//}
-

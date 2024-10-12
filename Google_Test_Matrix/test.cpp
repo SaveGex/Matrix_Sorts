@@ -25,8 +25,5 @@ TEST(ConstructorTests, InitTest3) {
 }
 
 
-TEST(ConstructorTests, InitTest4) {
-	std::cout << -1 - (-10);
-}
 
 
