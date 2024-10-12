@@ -1,0 +1,8 @@
+Package: cxxopts
+Version: 3.2.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 58636e12cf50151a44b82e81648ec4e0d09431a4b5bc8ec37ac4d56bd372e875
+Description: This is a lightweight C++ option parser library, supporting the standard GNU style syntax for options
+Status: install ok installed

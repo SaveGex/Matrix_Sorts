@@ -39,6 +39,7 @@ int main() {
 	obj3.quick_Sort();
 	cout << "\n\n\n\n" << obj3;
 
-	
+	cout << obj3.get_max() << '\n';
+	cout << obj3.get_min();
 	return 0;
 }

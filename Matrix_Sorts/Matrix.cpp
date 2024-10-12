@@ -107,6 +107,34 @@ void Matrix::fulfill_random_fill(int min_value, int max_value) {
 	}
 }
 
+int Matrix::get_max(){
+	int max = this->matrix[this->rows-1][this->cols-1];
+
+	for (int i = 0; i < this->rows; i++) {
+
+		if (max < this->matrix[i][this->cols-1]) {
+			max = this->matrix[i][this->cols-1];
+		}
+
+	}
+
+	return max;
+}
+
+int Matrix::get_min(){
+	int min = this->matrix[this->rows-1][this->cols-1];
+
+	for (int i = 0; i < this->rows; i++) {
+
+		if (min > this->matrix[i][0]) {
+			min = this->matrix[i][0];
+		}
+
+	}
+
+	return min;
+}
+
 int partition(int* array, int min, int max) {
 	int pivot = array[min];
 	int i = min - 1, j = max + 1;
@@ -128,25 +156,26 @@ int partition(int* array, int min, int max) {
 	}
 }
 
-int* Matrix::quick_Sort(int* array, int min_index, int max_index){
-	for (int i = 0; i < rows; i++) {
-		if (min_index < max_index) {
-			int pi = partition(array, min_index, max_index);
+int* Matrix::quick_Sort(int* array, int min_index, int max_index) {
+	if (min_index < max_index) {
+
+		int pi = partition(array, min_index, max_index);
 
 
-			quick_Sort(array, pi, min_index);
-			quick_Sort(array, max_index,pi + 1);
-		}
+		quick_Sort(array, min_index, pi);       
+		quick_Sort(array, pi + 1, max_index);   
 	}
 	return array;
 }
 
+
 int** Matrix::quick_Sort(int** matrix, int rows, int max_index, int min_index) {
 	for (int i = 0; i < rows; i++) {
-		quick_Sort(matrix[i], min_index, max_index - 1); 
+		quick_Sort(matrix[i], min_index, max_index - 1);
 	}
 	return matrix;
 }
+
 
 
 void Matrix::quick_Sort(){

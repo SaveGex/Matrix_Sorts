@@ -26,6 +26,8 @@ public:
 	friend std::ostream& operator<<(std::ostream& out, Matrix& obj);
 
 	void fulfill_random_fill(int min_value, int max_value);
+	int get_max();
+	int get_min();
 
 	#pragma region Sort_func
 	int* quick_Sort(int* matrix, int max_index, int min_index);

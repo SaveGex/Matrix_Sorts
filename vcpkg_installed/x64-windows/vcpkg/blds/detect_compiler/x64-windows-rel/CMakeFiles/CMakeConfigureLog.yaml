@@ -43,9 +43,9 @@ events:
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Примечание: включение файла:  C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\detect_compiler\\x64-windows-rel\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\detect_compiler\\x64-windows-rel\\CMakeFiles\\ShowIncludes\\foo.h
         
-      Found prefix "Примечание: включение файла:  "
+      Found prefix "Note: including file: "
   -
     kind: "message-v1"
     backtrace:
@@ -81,7 +81,7 @@ events:
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
-        Примечание: включение файла:  C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\detect_compiler\\x64-windows-rel\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\detect_compiler\\x64-windows-rel\\CMakeFiles\\ShowIncludes\\foo.h
         
-      Found prefix "Примечание: включение файла:  "
+      Found prefix "Note: including file: "
 ...

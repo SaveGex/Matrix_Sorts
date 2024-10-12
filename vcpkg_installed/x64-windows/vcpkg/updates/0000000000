@@ -1,9 +1,6 @@
-Package: gtest
-Version: 1.14.0
-Port-Version: 1
-Depends: vcpkg-cmake, vcpkg-cmake-config
+Package: vcpkg-cmake-config
+Version: 2024-05-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 849d8a19e1b69229141867288f72bb939bdee65a9a0639595c9fc369eca74138
-Description: Google Testing and Mocking Framework
+Abi: c6889540821a43a31f279d45cd7a0b54b2cc045221ba88a2ffe04c8dbb3cbf31
 Status: install ok half-installed
