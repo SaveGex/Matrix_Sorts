@@ -1,0 +1,602 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/GR;/EHsc;/MP
+      Id flags:  
+      
+      The output was:
+      0
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/3.30.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1243 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Примечание: включение файла:  C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Примечание: включение файла:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qh65jc"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qh65jc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qh65jc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f4a84
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f4a84.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_f4a84.dir\\ /FS -c "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f4a84.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f4a84.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_f4a84.exe /implib:cmTC_f4a84.lib /pdb:cmTC_f4a84.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/PROGRA~1/MICROS~2/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/MICROS~2/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:74 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_CXXSTDCOLON"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-e04sbh"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-e04sbh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_CXXSTDCOLON"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-e04sbh'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5c318
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_CXXSTDCOLON  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   /std:c++17 /showIncludes /FoCMakeFiles\\cmTC_5c318.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_5c318.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-e04sbh\\src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_5c318.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5c318.dir\\src.cxx.obj  /out:cmTC_5c318.exe /implib:cmTC_5c318.lib /pdb:cmTC_5c318.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:83 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_W3"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-woe4ap"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-woe4ap"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_W3"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-woe4ap'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d8a51
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_W3  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   /W3 /showIncludes /FoCMakeFiles\\cmTC_d8a51.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_d8a51.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-woe4ap\\src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d8a51.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d8a51.dir\\src.cxx.obj  /out:cmTC_d8a51.exe /implib:cmTC_d8a51.lib /pdb:cmTC_d8a51.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:84 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_WX"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-nl17fb"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-nl17fb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_WX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-nl17fb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_82c08
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_WX  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   /WX /showIncludes /FoCMakeFiles\\cmTC_82c08.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_82c08.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-nl17fb\\src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_82c08.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_82c08.dir\\src.cxx.obj  /out:cmTC_82c08.exe /implib:cmTC_82c08.lib /pdb:cmTC_82c08.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:119 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_FDIAGNOSTIC_SHOW_TEMPLATE_TREE"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-vi0uyc"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-vi0uyc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_FDIAGNOSTIC_SHOW_TEMPLATE_TREE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-vi0uyc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_43446
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_FDIAGNOSTIC_SHOW_TEMPLATE_TREE  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -fdiagnostics-show-template-tree /showIncludes /FoCMakeFiles\\cmTC_43446.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_43446.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-vi0uyc\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-fdiagnostics-show-template-tree"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_43446.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_43446.dir\\src.cxx.obj  /out:cmTC_43446.exe /implib:cmTC_43446.lib /pdb:cmTC_43446.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:120 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_FTEMPLATE_BACKTRACE_LIMIT"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-v6nes4"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-v6nes4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_FTEMPLATE_BACKTRACE_LIMIT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-v6nes4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4b0ae
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_FTEMPLATE_BACKTRACE_LIMIT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -ftemplate-backtrace-limit=0 /showIncludes /FoCMakeFiles\\cmTC_4b0ae.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_4b0ae.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-v6nes4\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-ftemplate-backtrace-limit=0"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4b0ae.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4b0ae.dir\\src.cxx.obj  /out:cmTC_4b0ae.exe /implib:cmTC_4b0ae.lib /pdb:cmTC_4b0ae.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:121 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_FMACRO_BACKTRACE_LIMIT"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-1riv08"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-1riv08"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_FMACRO_BACKTRACE_LIMIT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-1riv08'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2b82f
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_FMACRO_BACKTRACE_LIMIT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -fmacro-backtrace-limit=1 /showIncludes /FoCMakeFiles\\cmTC_2b82f.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_2b82f.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1riv08\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-fmacro-backtrace-limit=1"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2b82f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2b82f.dir\\src.cxx.obj  /out:cmTC_2b82f.exe /implib:cmTC_2b82f.lib /pdb:cmTC_2b82f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:188 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_NO_INLINE"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gk7y9b"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gk7y9b"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_NO_INLINE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gk7y9b'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_651e0
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_NO_INLINE  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -fno-inline /showIncludes /FoCMakeFiles\\cmTC_651e0.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_651e0.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-gk7y9b\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-fno-inline"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_651e0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_651e0.dir\\src.cxx.obj  /out:cmTC_651e0.exe /implib:cmTC_651e0.lib /pdb:cmTC_651e0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:189 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_STACK_PROTECTOR_ALL"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gx32e6"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gx32e6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_STACK_PROTECTOR_ALL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gx32e6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_557f3
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_STACK_PROTECTOR_ALL  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -fstack-protector-all /showIncludes /FoCMakeFiles\\cmTC_557f3.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_557f3.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-gx32e6\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-fstack-protector-all"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_557f3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_557f3.dir\\src.cxx.obj  /out:cmTC_557f3.exe /implib:cmTC_557f3.lib /pdb:cmTC_557f3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:190 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_G3"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ziord8"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ziord8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_G3"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ziord8'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e2edb
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_G3  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -g3 /showIncludes /FoCMakeFiles\\cmTC_e2edb.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_e2edb.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-ziord8\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-g3"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e2edb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e2edb.dir\\src.cxx.obj  /out:cmTC_e2edb.exe /implib:cmTC_e2edb.lib /pdb:cmTC_e2edb.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:235 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_MARCH_NATIVE"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-18m2mj"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-18m2mj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_MARCH_NATIVE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-18m2mj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_761a8
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_MARCH_NATIVE  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -march=native /showIncludes /FoCMakeFiles\\cmTC_761a8.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_761a8.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-18m2mj\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-march=native"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_761a8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_761a8.dir\\src.cxx.obj  /out:cmTC_761a8.exe /implib:cmTC_761a8.lib /pdb:cmTC_761a8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/ranges_flags.cmake:16 (check_cxx_compiler_flag)"
+      - "cmake/ranges_flags.cmake:236 (ranges_append_flag)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_MTUNE_NATIVE"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rynkb4"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rynkb4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_MTUNE_NATIVE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rynkb4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6605b
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_MTUNE_NATIVE  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1   -mtune=native /showIncludes /FoCMakeFiles\\cmTC_6605b.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_6605b.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rynkb4\\src.cxx
+        cl: командная строка warning D9002: пропуск неизвестного параметра "-mtune=native"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6605b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6605b.dir\\src.cxx.obj  /out:cmTC_6605b.exe /implib:cmTC_6605b.lib /pdb:cmTC_6605b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/ranges_flags.cmake:244 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGE_V3_ALIGNED_NEW_PROBE"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qkfohx"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qkfohx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGE_V3_ALIGNED_NEW_PROBE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qkfohx'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b2334
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGE_V3_ALIGNED_NEW_PROBE  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /std:c++17 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b2334.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_b2334.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-qkfohx\\src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b2334.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b2334.dir\\src.cxx.obj  /out:cmTC_b2334.exe /implib:cmTC_b2334.lib /pdb:cmTC_b2334.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/ranges_flags.cmake:255 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:25 (include)"
+    checks:
+      - "Performing Test RANGES_HAS_AWAIT"
+    directories:
+      source: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-1rx0w3"
+      binary: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-1rx0w3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/src/8e09e4d7ec-ac2933c7cd.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "RANGES_HAS_AWAIT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-1rx0w3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5a8b7
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_AWAIT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /await /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5a8b7.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_5a8b7.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx
+        FAILED: CMakeFiles/cmTC_5a8b7.dir/src.cxx.obj 
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRANGES_HAS_AWAIT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /await /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5a8b7.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_5a8b7.dir\\ /FS -c C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\coroutine(14): warning STL4039: The contents of <coroutine> are not available with /await. Remove /await or use /await:strict for standard coroutines. Use <experimental/coroutine> for legacy /await support.
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(22): error C2039: "suspend_never": не является членом "std".
+        predefined C++ types (compiler internal)(347): note:  см. объявление "std"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(22): error C3646: initial_suspend: неизвестный спецификатор переопределения
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(22): error C2059: синтаксическая ошибка: (
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(22): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(23): error C2039: "suspend_never": не является членом "std".
+        predefined C++ types (compiler internal)(347): note:  см. объявление "std"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(23): error C3646: final_suspend: неизвестный спецификатор переопределения
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(23): error C2059: синтаксическая ошибка: (
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(23): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(31): error C2039: "coroutine_handle": не является членом "std".
+        predefined C++ types (compiler internal)(347): note:  см. объявление "std"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(31): error C2061: синтаксическая ошибка: идентификатор "coroutine_handle"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(40): error C3774: не удается найти "std::experimental": включите заголовок "<experimental/coroutine>"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(38): error C3774: не удается найти "std::experimental": включите заголовок "<experimental/coroutine>"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(40): error C3774: не удается найти "std::experimental": включите заголовок "<experimental/coroutine>"
+        C:\\Users\\Opsik\\source\\repos\\Matrix_Sorts\\vcpkg_installed\\vcpkg\\blds\\range-v3\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-1rx0w3\\src.cxx(41): error C3774: не удается найти "std::experimental": включите заголовок "<experimental/coroutine>"
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

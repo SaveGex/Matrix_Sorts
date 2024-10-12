@@ -1,0 +1,11 @@
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/CMakeFiles/range.v3.headers.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/CMakeFiles/edit_cache.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/CMakeFiles/rebuild_cache.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/CMakeFiles/list_install_components.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/CMakeFiles/install.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/CMakeFiles/install/local.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/doc/CMakeFiles/edit_cache.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/doc/CMakeFiles/rebuild_cache.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/doc/CMakeFiles/list_install_components.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/doc/CMakeFiles/install.dir
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/blds/range-v3/x64-windows-rel/doc/CMakeFiles/install/local.dir

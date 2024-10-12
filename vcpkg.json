@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "cxxopts",
+    "fmt",
+    "range-v3",
+    "gtest"
+  ]
+}

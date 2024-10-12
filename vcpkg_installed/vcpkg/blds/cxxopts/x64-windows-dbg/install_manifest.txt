@@ -1,0 +1,5 @@
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/pkgs/cxxopts_x64-windows/debug/lib/cmake/cxxopts/cxxopts-config.cmake
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/pkgs/cxxopts_x64-windows/debug/lib/cmake/cxxopts/cxxopts-config-version.cmake
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/pkgs/cxxopts_x64-windows/debug/lib/cmake/cxxopts/cxxopts-targets.cmake
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/pkgs/cxxopts_x64-windows/debug/include/cxxopts.hpp
+C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/pkgs/cxxopts_x64-windows/debug/lib/pkgconfig/cxxopts.pc

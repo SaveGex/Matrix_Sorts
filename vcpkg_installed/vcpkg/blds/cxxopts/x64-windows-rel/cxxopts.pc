@@ -1,0 +1,7 @@
+prefix=C:/Users/Opsik/source/repos/Matrix_Sorts/vcpkg_installed/vcpkg/pkgs/cxxopts_x64-windows
+includedir=${prefix}/include
+
+Name: cxxopts
+Description: 
+Version: 3.2.1
+Cflags: -I${includedir}

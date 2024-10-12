@@ -1,0 +1,43 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c6889540821a43a31f279d45cd7a0b54b2cc045221ba88a2ffe04c8dbb3cbf31
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-18
+Architecture: x64-windows
+Multi-Arch: same
+Abi: dfee4664c1116135a7280d4ce591883434b991f633d3caa2a73e4daca2a6cf18
+Status: install ok installed
+
+Package: cxxopts
+Version: 3.2.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 58636e12cf50151a44b82e81648ec4e0d09431a4b5bc8ec37ac4d56bd372e875
+Description: This is a lightweight C++ option parser library, supporting the standard GNU style syntax for options
+Status: install ok installed
+
+Package: fmt
+Version: 10.2.1
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 63efbbbc2891a5010242ccd0e888dd4e5bbbc4de6da961b7911d362f1eb5a473
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+
+Package: range-v3
+Version: 0.12.0
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 35facd3ee960724a4c795bc523f4ea575a6cdc070580feabe1009e9f29a62da6
+Description: Range library for C++14/17/20, basis for C++20's std::ranges
+Status: install ok installed
+
